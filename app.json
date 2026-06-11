@@ -30,6 +30,9 @@
       "backgroundColor": "#ffffff",
       "display": "standalone",
       "orientation": "portrait"
+    },
+    "experiments": {
+      "baseUrl": "/calculator-pwa-v2"
     }
   }
 }
