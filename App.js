@@ -7,7 +7,9 @@ export default function App() {
   return (
     <ErrorBoundary>
       <View style={styles.container}>
-        <CalculatorScreen />
+        <View style={styles.appWrapper}>
+          <CalculatorScreen />
+        </View>
       </View>
     </ErrorBoundary>
   );
@@ -16,6 +18,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#6b66c0', // 3枚目の画像（ばーじょんわん）の背景色に近い色
+    alignItems: 'center',
   },
+  appWrapper: {
+    flex: 1,
+    width: '100%',
+    maxWidth: 480,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.15,
+    shadowRadius: 12,
+    elevation: 8,
+  }
 });
